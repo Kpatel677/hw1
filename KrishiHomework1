@@ -1,1 +1,45 @@
-
+<!-- 
+    Name: Krishi Patel  
+    File: homework1.html
+    Date Created: 
+    Date Updated: 
+    Purpose: 
+-->
+<table class="form">
+    <tr class="form">
+        <th class="form" colspan="3">Set up a new account</th>
+    </tr>
+    <tr class="form">
+        <td align="right">
+            <label for="firstname">First NAME</label>
+            <label for="middleinit">MI</label>
+            <label for="lastname">Last</label>
+        </td>
+        <td>
+             <input type="text"
+                    size="25"
+                    maxlength="30" 
+                    id="firstname" 
+                    name="firsttname" 
+                    required
+                    oninput="this.setCustomValidity('')"
+                    placeholder="(req'd)"
+            >
+            
+            <input type="text" 
+                    size="1"
+                    maxlength="1" 
+                    id="middleinit" 
+                    name="middleinit" 
+                    placeholder="Q"
+            >
+            <input type="text"
+                    size="20"
+                    maxlength="30" 
+                    id="lastname" 
+                    name="lastname" 
+                    required
+                    oninvalid="this.setCustomValidity('Last Name is Required')"
+                    oninput="this.setCustomValidity('')"
+                    placeholder="Public (req'd)"
+            >
